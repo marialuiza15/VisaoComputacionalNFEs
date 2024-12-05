@@ -47,13 +47,6 @@ def extrair_informacoes_nota(texto):
 
     return informacoes
 
-# Exemplo de uso
-pdf_path = 'C:\\Users\\Malu\\Desktop\\VisaoComp\\NFETeste.pdf' 
-texto_extraido = extrair_texto_pdf(pdf_path)
-informacoes = extrair_informacoes_nota(texto_extraido)
-
-
-
 st.title('Extração de Informações de Nota Fiscal')
 uploaded_file = st.file_uploader("Escolha um arquivo PDF", type="pdf")
 if uploaded_file is not None:
